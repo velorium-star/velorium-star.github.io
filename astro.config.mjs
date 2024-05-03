@@ -117,6 +117,6 @@ export default defineConfig({
     clientPrerender: true,
     directRenderScript: true,
   },
-  adapter: vercelStatic(),
+  adapter: process.env.USE_VERCEL ? vercelStatic() : undefined,
   outDir: "dist",
 });
