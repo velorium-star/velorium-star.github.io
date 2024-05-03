@@ -9,7 +9,6 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://velorium-star.github.io",
-  base: "velorium-star.github.io",
   image: {
     domains: ["images.unsplash.com"],
   },
