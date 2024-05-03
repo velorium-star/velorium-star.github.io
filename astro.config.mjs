@@ -8,7 +8,8 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://velorium-star.github.io",
+  base: "velorium-star.github.io",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -116,5 +117,5 @@ export default defineConfig({
     clientPrerender: true,
     directRenderScript: true,
   },
-  outDir: "dist"
+  adapter: vercelStatic(),
 });
